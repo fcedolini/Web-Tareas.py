@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Pendientes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #88a5b6;
+            font-family: "Abel", sans-serif;
+            padding-top: 60px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background-color: #bbbbb9;
+            -webkit-box-shadow: 5px 5px 15px -4px rgba(0, 0, 0, 0.21);
+            box-shadow: 5px 5px 15px -4px rgba(0, 0, 0, 0.21);
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Lato", sans-serif;
+
+        }
+
+        .enlace-registrar {
+            text-decoration: none;
+            font-size: 20px;
+            color: #101465;
+            font-weight: bold;
+        }
+
+        a {
+            color: #ffffff;
+        }
+
+        p {
+            color: #101465;
+        }
+
+        #volver {
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .barra-sup {
+            display: flex;
+            justify-content: space-between;
+            color: #ffffff;
+            padding: 10px;
+            border-radius: 5px 5px 0 0;
+            background: linear-gradient(90deg, #5a71f1 0%, #344cd3 43%, #344cd3 100%);
+        }
+
+        .container-tarea {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #ffffff;
+            border-top: 1px solid rgb(225, 225, 225);
+        }
+
+        .titulo-tarea {
+            display: flex;
+        }
+
+        .titulo-tarea a {
+            text-decoration: none;
+            color: black;
+            margin-left: 10px;
+        }
+
+        .icono-tarea-completa {
+            height: 20px;
+            width: 20px;
+            background-color: rgb(105, 162, 105);
+            border-radius: 50px;
+        }
+
+        .icono-tarea-incompleta {
+            height: 20px;
+            width: 20px;
+            background-color: rgb(218, 218, 218);
+            border-radius: 50px;
+        }
+
+        .enlace-eliminar {
+            text-decoration: none;
+            font-weight: 900;
+            font-size: 20px;
+            color: red;
+            line-height: 0;
+        }
+
+        .boton-salir {
+            font-family: "Lato", sans-serif;
+            border-radius: 30%;
+        }
+
+        #container-agregar-buscar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        #enlace-agregar {
+            color: #1db225;
+            text-decoration: none;
+            font-size: 38px;
+            text-shadow: 1px 1px #325337;
+        }
+
+        input[type=text],
+        input[type=password],
+        textarea {
+            border: 1px solid #2a12b4;
+            border-radius: 5px;
+            padding: 10px;
+            width: 90%;
+        }
+
+        label {
+            padding-top: 10px !important;
+            display: block;
+        }
+
+        .button {
+            border: 1px solid #EB796F;
+            background-color: #FAFAFA;
+            color: #EB796F;
+            padding: 10px;
+            font-size: 14px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .cuerpo-tarjeta {
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        {% block content %}
+
+        {% endblock content %}
+    </div>
+</body>
+
+</html>
