@@ -1,4 +1,6 @@
-Proyecto web de tareas pendientes
+Proyecto web de tareas pendientes<br>
+
+https://lista-pendientes-8a3822cd752a.herokuapp.com/login/
 
 -Web que permite crear, editar y eliminar una lista de tareas para cada usuario registrado<br>
 Tec en uso: Django 5.1 y sqlite
