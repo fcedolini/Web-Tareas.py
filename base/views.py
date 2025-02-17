@@ -57,6 +57,7 @@ class CrearTarea(LoginRequiredMixin, CreateView):
     fields = ['titulo', 'descripcion', 'completo']
     success_url = reverse_lazy('pendientes')
 
+    # Sobreescribir para hacer q la tarea creada se asigne directamente al usuario logueado en vez de preguntar a q user corresponde
     def form_valid(self, form):
         form.instance.usuario = self.request.user
         return super(CrearTarea, self).form_valid(form)
@@ -80,12 +81,14 @@ class CrearUsuario(FormView):
     redirect_authenticated_user = True
     success_url = reverse_lazy('pendientes')
 
+    # Sobreescribir para que al registrar el user ya quede conectado
     def form_valid(self, form):
         usuario = form.save()
         if usuario is not None:
             login(self.request, usuario)
         return super(CrearUsuario, self).form_valid(form)
 
+    # Sobreescribir para que si estás conectado con un user, no deje ir a la web de crear user nuevo
     def get(self, *args: str, **kwargs):
         if self.request.user.is_authenticated:
             return redirect('pendientes')

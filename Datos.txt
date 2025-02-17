@@ -1,0 +1,10 @@
+Lista de pendientes
+
+Django
+Subido a GitHub
+
+super user: Fede
+pass: 12345678
+usuario/Cedolini%01
+No staff: pedro
+pass: Limbo202020
