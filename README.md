@@ -4,7 +4,7 @@ Proyecto web de tareas pendientes
 Tec en uso: Django 5.1 y sqlite
 
 Usuario de prueba <br>
-user: pedro
+user: pedro<br>
 pass: Limbo202020
 
 Funcionalidades:<br>
