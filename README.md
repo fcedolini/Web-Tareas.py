@@ -17,5 +17,5 @@ pass: Limbo202020
 -Restringir acceso a las Urls a usuarios sin logueo. LoginRequiredMixin<br>
 -Filtro para recibir la info solo del user logueado y no del resto. Reescribiendo method get_context_data()<br>
 -Asigna las tareas creada directo al user logueado en vez de consultar autor. Vista CrarTarea reescribiendo el method form_valid()<br>
--Barra de búsqueda aplicando filtros en la vista, por usuario y por Título de tarea
-
+-Barra de búsqueda aplicando filtros en la vista, por usuario y por Título de tarea<br>
+-Registro de nuevos usuarios (clave más de 8 caracteres con n° y letras)
